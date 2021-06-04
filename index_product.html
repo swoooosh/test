@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset="UTF-8">
+	<title>ЭКСО_Товары</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style._product.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+<!--Подключение библиотеки jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.css" rel="stylesheet">
+
+<!-- Иконки-->
+<script src="https://kit.fontawesome.com/098fd12808.js" crossorigin="anonymous"></script>
+
+<!-- Слайдер картинок -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/jquery.fancybox.min.css" />
+	<script src="js/jquery.fancybox.min.js"></script>
+
+</head>
+
+<header>
+	<!--Параметры меню-->
+	<div class="header_new">
+		<div class="figure">
+			<div class="logo"><img src="image/image_logo.png"></div>
+		</div>
+		<div class="border"></div>
+
+		<div class="conteiner_menu_1">
+			<div class="icon">
+				<input id="soc" type="checkbox">
+				<label for="soc"><i class="fas fa-project-diagram"></i></label>
+					<div class="social_conteiner">
+						<li>
+							<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+								<i class="fab fa-vk"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+					</div>
+			</div>
+			<div class="menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a class="border_menu" href="index_product.html">Каталог</a></li>
+			</div>
+		</div>
+
+		<div class="conteiner_menu_2">
+			<div class="menu">
+				<li><a href="services.html">Услуги</a></li>
+				<li><a href="index_contact.html">Контакты</a></li>
+			</div>
+			<div class="icon">
+				<input id="search" type="checkbox">
+				<label for="search" class="button_search"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+		</div>
+	</div>
+
+	<!--Параметры мобильного меню-->
+	<div class="mobile_menu">
+			<div class="conteiner_mobile_menu">
+				<label for="toggle_menu">
+					<div class="header_burger">
+						<span></span>
+					</div>
+				</label>
+				<input type="checkbox" id="toggle_menu">
+					<div class="menu_header">
+						<a href="index.html">Главная</a>
+						<a href="index_product.html">Каталог</a>
+		    		<a href="services.html">Услуги</a>
+						<a href="index_contact.html">Контакты</a>
+						<a href="photogallery.html">Фотогалерея</a>
+					</div>
+				<div class="mobile_img">
+					<p>ЭКО</p>
+					<img src="image/mobile_logo.png" alt="">
+					<p>КВАРЦ</p>
+				</div>
+				<input id="basket" type="checkbox">
+				<label for="basket"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+	</div>
+	<script src="js/script_mobile-menu.js"></script> <!--Скрипт на мобильное меню-->
+
+</header>
+
+<body>
+<!--Блок слайдера с продукцией-->
+<div id="slider" class="slider_conteiner">
+	<input type="radio" name="slider" id="slide1" checked>
+	<input type="radio" name="slider" id="slide2">
+	<input type="radio" name="slider" id="slide3">
+	<div id="slides">
+		<div id="overflow">
+			<div class="inner">
+				<div class="slide slide_1">
+					<div class="slide_content">
+						<div class="text_slider">
+							<p>Монолитные кварцевые обогреватели ЭКО помогут создать тепло и уют в вашем доме. Основа устройства - песок, который мы специально отобрали и очистили. Данный природный материал обладает высокой теплоемкостью. Используются кварцевые обогреватели как в жилых, так и промышленных помещениях.</p>
+							<h2>Преимущества наших систем отопления:</h2>
+							<ul>
+								<li>экономичность - номинальная мощность от 380 Вт в час;</li>
+								<li>для поддержания тепла достаточно 7-8 часов работы;</li>
+								<li>первый класс пожаробезопасности, подтверждён сертификатами;</li>
+								<li>средний срок службы - 25 лет, гарантия от производителя - 5 лет.</li>
+							</ul>
+						</div>
+						<div class="image_slider">
+							<img src="image/image_7.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="slide slide_2">
+					<div class="slide_content">
+						<div class="text_slider">
+							<p>Для поддержания стабильной комфортной температуры в помещении, которое отапливается обогревателями ЭКСО, служит специальное устройство – терморегулятор. Это позволяет не только создавать оптимальный микроклимат, но и сделать процесс отопления еще более экономным. Наша компания предлагает приобрести и установить терморегулятор eberle 3563.</p>
+							<h2>Преимущества использования наших терморегуляторов:</h2>
+							<ul>
+								<li>надежные и долговечные, хорошее крепление;</li>
+								<li>экономные – сводят к минимуму расходы на электроэнергию;</li>
+								<li>быстро реагируют на перепад температуры в помещении;</li>
+								<li>чувствительны к незначительным температурным колебаниям.</li>
+							</ul>
+						</div>
+						<div class="image_slider">
+							<img src="image/image_8.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="slide slide_3">
+					<div class="slide_content">
+						<div class="text_slider">
+							<p>Аксессуары, разработанные производителем для модельной линейки монолитных кварцевых обогревателей ЭКСО, относительно немногочисленны – но способны существенно повысить комфорт использования приборов.</p>
+							<h2>Назначение аксессуаров ЭКСО:</h2>
+							<ul>
+								<li>мобильность: любую кварцевую панель можно установить на подвижную подставку – металлическую конструкцию на колесах;</li>
+								<li>защита и эстетика: горизонтальные и вертикальные экраны обеспечивают безопасную во всех отношениях эксплуатацию отопительных панелей;</li>
+								<li>эффективность: специальная теплоотражающая фольга усиливает конвекцию, а «умная» розетка позволяет программировать цикл работы оборудования;</li>
+								<li>расширение возможностей: на решетчатой полке-сушилке быстро и безопасно просушивается обувь, головные уборы.</li>
+							</ul>
+						</div>
+						<div class="image_slider">
+							<img src="image/image_9.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bullets">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+	</div>
+</div>
+
+<!--Блок обогревателей, терморегуляторов и акссесуаров-->
+<div class="conteiner_filter">
+	<div class="filter_size">
+    	<div class="box_size">
+     		<input class="ThemeSize1" type="radio" id="size1">
+      		<input class="ThemeSize2" type="radio" id="size2">
+      		<input class="ThemeSize3" type="radio" id="size3">
+     	</div>
+     	<div class="navigation_size">
+      		<label class="button_size size_background1" for="size1"><i class="fas fa-grip-horizontal"></i></label>
+      		<label class="button_size size_background2" for="size2"><i class="fas fa-th"></i></label> 
+      		<label class="button_size size_background3" for="size3"><i class="fas fa-th-large"></i></label> 
+     	</div>
+    </div>
+		<li class="active">Обогреватели</li>
+		<li>Терморегуляторы</li>
+		<li>Датчики WI-FI</li>
+		<li>Аксессуары</li>
+</div>
+<section>
+	<!--кварцевые обогреватели-->
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_1.html">
+				<img src="image/product_heater/image_p_1.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_1.html">
+				<h4>Кварцевый обогреватель армированный "ЭКСО 380"</h4>
+			</a>
+			<div class="price">
+				<h2>2000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_2.html">
+				<img src="image/product_heater/image_p_2.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_2.html">
+				<h4>Кварцевый обогреватель армированный "ЭКСО 380" классический</h4>
+			</a>
+			<div class="price">
+				<h2>2000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_3.html">
+				<img src="image/product_heater/image_p_3.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_3.html">
+				<h4>Монолитный кварцевый обогреватель "ЭКСО 380"</h4>
+			</a>
+			<div class="price">
+				<h2>2400 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_4.html">
+				<img src="image/product_heater/image_p_4.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_4.html">
+				<h4>Кварцевый обогреватель армированный "ЭКСО 620"</h4>
+			</a>
+			<div class="price">
+				<h2>2700 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_5.html">
+				<img src="image/product_heater/image_p_5.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_5.html">
+				<h4>Кварцевый обогреватель армированный "ЭКСО 380" на подставке</h4>
+			</a>
+			<div class="price">
+				<h2>2800 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_6.html">
+				<img src="image/product_heater/image_p_6.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_6.html">
+				<h4>Кварцевый обогреватель армированный "ЭКСО 380" классический на подставке</h4>
+			</a>
+			<div class="price">
+				<h2>2800 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_7.html">
+				<img src="image/product_heater/image_p_7.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_7.html">
+				<h4>Монолитный кварцевый обогреватель "ЭКСО 620"</h4>
+			</a>
+			<div class="price">
+				<h2>3100 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_8.html">
+				<img src="image/product_heater/image_p_8.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_8.html">
+				<h4>Кварцевый обогреватель "ЭКСО 380" на подставке</h4>
+			</a>
+			<div class="price">
+				<h2>3200 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_9.html">
+				<img src="image/product_heater/image_p_9.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_9.html">
+				<h4>Кварцевый обогреватель "ЭКСО 620" на подставке</h4>
+			</a>
+			<div class="price">
+				<h2>3900 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_10.html">
+				<img src="image/product_heater/image_p_10.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_10.html">
+				<h4>Кварцевый обогреватель "ЭКСО 380" с защитным экраном (горизонтальный)</h4>
+			</a>
+			<div class="price">
+				<h2>4000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb thumb_size" data-id="Обогреватели">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_heater_11.html">
+				<img src="image/product_heater/image_p_11.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_heater_11.html">
+				<h4>Кварцевый обогреватель "ЭКСО 620" с защитным экраном</h4>
+			</a>
+			<div class="price">
+				<h2>4700 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--терморегуляторы-->
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_1.html">
+				<img src="image/product_thermostat/image_thermostat_1.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_1.html">
+				<h4>Терморегулятор для обогревателя "ТеплаДар"</h4>
+			</a>
+			<div class="price">
+				<h2>600 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_2.html">
+				<img src="image/product_thermostat/image_thermostat_2.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_2.html">
+				<h4>Комнатный термостат ZILON  ZA-1</h4>
+			</a>
+			<div class="price">
+				<h2>1000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_3.html">
+				<img src="image/product_thermostat/image_thermostat_3.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_3.html">
+				<h4>Терморегулятор Ballu BMT-2</h4>
+			</a>
+			<div class="price">
+				<h2>1300 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_4.html">
+				<img src="image/product_thermostat/image_thermostat_4.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_4.html">
+				<h4>Терморегулятор EBERLE с воздушным датчиком, выключателем, без кабеля</h4>
+			</a>
+			<div class="price">
+				<h2>1500 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_5.html">
+				<img src="image/product_thermostat/image_thermostat_5.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_5.html">
+				<h4>Терморегулятор Grand Meyer MS T-3 с воздушным датчиком</h4>
+			</a>
+			<div class="price">
+				<h2>1500 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_6.html">
+				<img src="image/product_thermostat/image_thermostat_6.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_6.html">
+				<h4>Терморегулятор Terneo rz в розетку с воздушным датчиком</h4>
+			</a>
+			<div class="price">
+				<h2>2000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_7.html">
+				<img src="image/product_thermostat/image_thermostat_7.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_7.html">
+				<h4>Терморегулятор Grand Meyer PST-3 с электронным дисплеем, воздушным датчиком и кабелем</h4>
+			</a>
+			<div class="price">
+				<h2>2500 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Терморегуляторы">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_thermostat_8.html">
+				<img src="image/product_thermostat/image_thermostat_8.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_thermostat_8.html">
+				<h4>Терморегулятор Grand Meyer PST-3 с воздушным датчиком и выключателем без кабеля</h4>
+			</a>
+			<div class="price">
+				<h2>2500 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--датчики WI-FI-->
+	<div class="thumb" data-id="Датчики WI-FI">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_WI-FI_1.html">
+				<img src="image/product_WI-FI/image_WI-FI_1.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_WI-FI_1.html">
+				<h4>Mini Smart Wifi Switch</h4>
+			</a>
+			<div class="price">
+				<h2>1000 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--аксессуары-->
+	<div class="thumb" data-id="Аксессуары">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_accessories_1.html">
+				<img src="image/product_accessories/image_accessories_1.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_accessories_1.html">
+				<h4>Теплоотражающая фольга на стену</h4>
+			</a>
+			<div class="price">
+				<h2>100 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Аксессуары">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_accessories_2.html">
+				<img src="image/product_accessories/image_accessories_2.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_accessories_2.html">
+				<h4>Сушилка для обуви и вещей</h4>
+			</a>
+			<div class="price">
+				<h2>350 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Аксессуары">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_accessories_3.html">
+				<img src="image/product_accessories/image_accessories_3.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_accessories_3.html">
+				<h4>Розетка суточная</h4>
+			</a>
+			<div class="price">
+				<h2>400 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Аксессуары">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_accessories_4.html">
+				<img src="image/product_accessories/image_accessories_4.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_accessories_4.html">
+				<h4>Подставка передвижная на колёсиках под обогреватель</h4>
+			</a>
+			<div class="price">
+				<h2>800 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="thumb" data-id="Аксессуары">
+	<div class="thumb_box">
+		<div class="heater_img">
+			<a href="product_accessories_5.html">
+				<img src="image/product_accessories/image_accessories_5.jpg">
+			</a>
+		</div>
+		<div class="box_text_product">
+			<a href="product_accessories_5.html">
+				<h4>Экран декоративный белый горизонтальный</h4>
+			</a>
+			<div class="price">
+				<h2>1600 руб.</h2>
+				<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><i class="fas fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<!--Блок задать вопросы-->
+<div class="conteiner_questions">
+	<input id="question" type="checkbox">
+	<label for="question" class="button_question">
+		<div class="question_check">
+			<h1 class="question_text">Задайте нам вопрос</h1>
+			<i class="fas fa-question-circle"></i>
+		</div>
+	</label>
+		<div class="box_question">
+			<div class="close_question">
+				<label for="question"><i class="fas fa-times"></i></label>
+			</div>
+			<div class="info_question">
+				<form action="mail.php" method="POST">
+					<h1>Заполните эту форму и мы обязательно свяжемся с вами</h1>
+					<div class="inputBox W50">
+						<textarea required="" name="user_text"></textarea>
+						<span>Ваше сообщение</span>
+					</div>
+					<div class="inputBox W50">
+					    <input type="text" required="" name="user_name">
+						<span>Ваше имя</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_email">
+						<span>Ваш email</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_phone">
+						<span>Ваш номер телефона</span>
+					</div>
+					<button type="submit" class="inputBox btn_question">Отправить</button>
+				</form>
+			</div>	
+		</div>
+</div>
+
+<!--Скрипт на смену размеров блоков товара-->
+<script src="js/scriptTheme.js"></script>
+
+<!--Скрипт на смену каталога товаров-->
+<script type="text/javascript">
+	const buttons = document.querySelectorAll("li");
+	const section = document.querySelectorAll(".thumb");
+	let values = "Обогреватели";
+	filter(values);
+	function filter(values){
+		section.forEach(show =>{
+			show.style.display = "none";
+			if(show.getAttribute("data-id") === values || values === "All"){
+				show.style.display = "block";
+			}
+		});
+	}
+	buttons.forEach(item =>{
+		item.addEventListener('click', ()=>{
+			buttons.forEach(item =>{
+				item.className = "";
+			});
+			item.className = "active";
+
+			let values = item.textContent;
+			filter(values);
+		});
+	});
+</script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.css" rel="stylesheet">
+
+<!--Положение значка корзины-->
+<style>
+	#enscart_wrapper {
+		top: 3%;  
+		bottom: auto;
+		right: 10%;
+		left: auto;		
+	}
+</style>
+
+<!--Изменения значка корзины-->
+<script>
+    document.addEventListener("EasyNetShopLoaded", function(event) {
+	  // Устанавливаем изображение. Указываем адрес загруженной на сайт картинки 
+      ens_jQuery('#enscart_image_wrapper').html('<i class="fas fa-shopping-basket"></i>');             
+    }, false);
+</script>
+
+<style>
+    #enscart_wrapper {
+      text-align: center; /*Выровнять иконку корзины по центру */
+    }
+   
+    #enscart_image_wrapper {
+      background: none /* Изменить фон кнопки */
+     
+    }
+    #enscart_image_wrapper .fas {
+      height: none; /* Подогнать размер изображения под кнопку */
+      width: none; 
+      font-size: 30px;
+      color: #C69155;
+      transition-duration: 1000ms;
+      padding-top: none;
+    }
+</style>
+
+<!--Изменение стили кнопки-->
+<style>
+	.btn-ens-style{ background-color:#10111F; }
+	.btn-ens-style{ border-color:#10111F; }
+	.btn-ens-style{ color:#C69155; }
+	.btn-ens-style:hover{ background-color:#10111F; }
+	.btn-ens-style:hover{ border-color:#10111F; }
+	.btn-ens-style:hover{ color:#F2E185; }
+</style>
+
+<!--Анимация перехода товара в корзину-->
+<script>
+document.addEventListener("EasyNetShopLoaded", function(event) {
+     ens_jQuery(".easynetshop-buy, .btn-ens-action").click(function () {
+       var target = ens_jQuery(this);
+       var pos = target.offset();
+       var cart_pos = ens_jQuery('#enscart_wrapper').offset();
+	   var clone = target.clone()
+			  .css({ position: 'absolute', 'z-index': '2100', top: pos.top, left: pos.left })
+			  .appendTo("body")
+			  .animate({top: cart_pos.top, left: cart_pos.left, opacity: 0}, 900, function() { clone.remove(); });
+       });
+    }, false);
+   document.addEventListener("EasyNetShopModalOpened", function(event) {
+      if ((ens_jQuery(".easynetshop-modal-addtocart").css('display') != 'none'))  hideEasynetshopModals();
+   }, false);
+</script>
+</body>
+
+<footer>
+	<div class="conteiner_newsletter">
+		<div class="newsletter">
+			<h1 class="wow">Подписывайтесь на нашу новостную рассылку</h1>
+			<input type="text" name="" placeholder="Введите почту">
+			<input type="submit" name="" value="Подписка">
+		</div>
+	</div>
+	<div class="conteiner_f_contact">
+		<div class="information">
+			<h1 class="c_h1">Свяжитесь с нами</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-map-marker-alt"></i>
+					<p>1-й Оборонный пер., 11,<br> Серпухов, Московская обл.,<br> 142200</p>
+				</li>
+				<li>
+					<i class="far fa-envelope"></i>
+					<p>eco.kvarz@mail.ru</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-209-08-10</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-926-597-96-89</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-208-68-16</p>
+				</li>
+			</div>
+		</div>
+		<div class="information">
+			<h1 class="c_h1">Информация</h1>
+			<div class="list_footer">
+				<li>
+					<input id="delivery" type="checkbox">
+					<label for="delivery">
+						<i class="fas fa-caret-right"></i>
+						<a>Доставка</a>
+					</label>
+						<div class="conteiner_delivery">	
+							<div class="close_delivery">
+								<label for="delivery"><i class="fas fa-times"></i></label>
+							</div>
+							<div class="box_delivery">
+								<div class="info_delivery">
+									<h3>Способы оплаты</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-money-bill"></i>
+											<h4>Наличный расчет</h4>
+										</div>
+										<p>В нешем торговом магазине по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-money-check-alt"></i>
+											<h4>Безналичный расчет</h4>
+										</div>
+										<p>Отправьте заявку, в которой укажите необходимое количество наименований продукции и контактную информацию.<br> Вам выставят счет, а после оплаты, возможна отгрузка товара.</p>
+								</div>
+								<div class="info_delivery">
+									<h3>Варианты доставки</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-truck-loading"></i>
+											<h4>Самовывоз</h4>
+										</div>
+										<p>Бесплатно с нашего торгового магазина по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-truck"></i>
+											<h4>Доставка по городу</h4>
+										</div>
+										<p>Осуществляется силами компаний перевозчиков</p>
+								</div>
+							</div>
+						</div>
+				</li>
+				<li>
+					<input id="certificates" type="checkbox">
+					<label for="certificates">
+						<i class="fas fa-caret-right"></i>
+						<a>Сертификаты</a>
+					</label>
+						<div class="conteiner_certificates">	
+							<div class="box_certificates">
+								<div class="close_certificates">
+									<label for="certificates"><i class="fas fa-times"></i></label>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg">
+        								<img src="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg" alt="">
+        							</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+				</li>
+			</div>
+		</div>
+		<div class="information information_foto">
+			<h1 class="c_h1">Фото</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-caret-right"></i>
+					<a href="photogallery.html">Фотогалерея</a>
+				</li>
+			</div>
+		</div>
+	</div>
+	<div class="footer_social">
+		<div class="menu_social_mobile">
+			<li>
+				<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+					<i class="fab fa-vk"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+					<i class="fab fa-telegram-plane"></i>
+				</a>
+			</li>
+		</div>
+	</div>
+</footer>

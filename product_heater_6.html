@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset="UTF-8">
+	<title>Кварцевый обогреватель армированный "ЭКСО 380" классический на подставке</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="product_heater.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+<!--Подключение библиотеки jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Иконки-->
+<script src="https://kit.fontawesome.com/098fd12808.js" crossorigin="anonymous"></script>
+
+<!-- Слайдер картинок -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/jquery.fancybox.min.css" />
+	<script src="js/jquery.fancybox.min.js"></script>
+
+</head>
+
+<header>
+	<!--Параметры меню-->
+	<div class="header_new">
+		<div class="figure">
+			<div class="logo"><img src="image/image_logo.png"></div>
+		</div>
+		<div class="border"></div>
+
+		<div class="conteiner_menu_1">
+			<div class="icon">
+				<input id="soc" type="checkbox">
+				<label for="soc"><i class="fas fa-project-diagram"></i></label>
+					<div class="social_conteiner">
+						<li>
+							<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+								<i class="fab fa-vk"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+					</div>
+			</div>
+			<div class="menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a class="border_menu" href="index_product.html">Каталог</a></li>
+			</div>
+		</div>
+
+		<div class="conteiner_menu_2">
+			<div class="menu">
+				<li><a href="services.html">Услуги</a></li>
+				<li><a href="index_contact.html">Контакты</a></li>
+			</div>
+			<div class="icon">
+				<input id="search" type="checkbox">
+				<label for="search" class="button_search"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+		</div>
+	</div>
+
+	<!--Параметры мобильного меню-->
+	<div class="mobile_menu">
+			<div class="conteiner_mobile_menu">
+				<label for="toggle_menu">
+					<div class="header_burger">
+						<span></span>
+					</div>
+				</label>
+				<input type="checkbox" id="toggle_menu">
+					<div class="menu_header">
+						<a href="index.html">Главная</a>
+						<a href="index_product.html">Каталог</a>
+		    		<a href="services.html">Услуги</a>
+						<a href="index_contact.html">Контакты</a>
+						<a href="photogallery.html">Фотогалерея</a>
+					</div>
+				<div class="mobile_img">
+					<p>ЭКО</p>
+					<img src="image/mobile_logo.png" alt="">
+					<p>КВАРЦ</p>
+				</div>
+				<input id="basket" type="checkbox">
+				<label for="basket"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+	</div>
+	<script src="js/script_mobile-menu.js"></script> <!--Скрипт на мобильное меню-->
+
+</header>
+
+<body>
+<div class="conteiner_parameters">
+	<div class="flipping">
+		<div class="button_flipping">
+			<a href="product_heater_5.html">
+				<button type="submit" class="btn_prev flare"><i class="fas fa-arrow-left"></i>Предыдущий товар</button>
+			</a>
+		</div>
+		<div class="button_flipping">
+			<a href="product_heater_7.html">
+				<button type="submit" class="btn_next flare">Следующий товар<i class="fas fa-arrow-right"></i></button>
+			</a>
+		</div>
+	</div>
+	<div class="box_parameters">
+		<div class="block_image">
+			<div id="slider" class="slider_conteiner">
+				<div id="bullets">
+					<label for="slide1">
+						<div class="label_img" for="slide1">
+							<img src="image/product_heater/image_p_6.jpg">
+						</div>
+					</label>
+					<label for="slide2" class="delete_display">
+						<div class="label_img">
+							<img src="image/product_heater/image_p_6.jpg">
+						</div>
+					</label>
+					<label for="slide3">
+						<div class="label_img">
+							<img src="https://kovcheggri-kzn.ru/thumb/2/NTHC8f7W6_mcuOxSx_VOAQ/400r400/d/obogrevateli_armirovanye_na_podstavke.jpg">
+						</div>
+					</label>
+				</div>
+				<input type="radio" name="slider" id="slide1" checked>
+				<input type="radio" name="slider" id="slide2">
+				<input type="radio" name="slider" id="slide3">
+				<div id="slides">
+					<div id="overflow">
+						<div class="inner">
+							<div class="slide slide_1">
+								<div class="image_slider">
+									<img src="image/product_heater/image_p_6.jpg">
+								</div>
+							</div>
+							<div class="slide slide_2 delete_display">
+								<div class="image_slider">
+									<img src="image/product_heater/image_p_6.jpg">
+								</div>
+							</div>
+							<div class="slide slide_3">
+								<div class="image_slider">
+									<img src="https://kovcheggri-kzn.ru/thumb/2/NTHC8f7W6_mcuOxSx_VOAQ/400r400/d/obogrevateli_armirovanye_na_podstavke.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block_text" id="conteiner_accordion">
+			<h1>Кварцевый обогреватель армированный "ЭКСО 380" классический на подставке</h1>
+			<div class="price_mobile">
+				<h2>2800 руб.</h2>
+				<button type="submit" class="btn_buy flare">
+					<a class="btn-ens-action btn-ens-style" data-rel="f2397d48253499"><h3>Купить</h3><i class="fas fa-shopping-basket"></i></a>
+				</button>
+			</div>
+			<div class="additional_info">
+				<div class="additional_box">
+					<i class="fas fa-truck"></i>
+					<p>Доставка осуществляется силами компаний перевозчиков по всему городу согласно тарифам.</p>
+				</div>
+				<div class="additional_box">
+					<i class="fas fa-handshake"></i>
+					<p>Гарантийный талон выдается на 5 лет, заявленное время работы от 25 лет и более. По всем вопросам звоните по телефонам: <span>8-926-597-96-89, 8-925-209-08-10, 8-925-208-68-16.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Блок характеристики товара-->
+<div class="conteiner_accordion">
+	<input class="ThemeSize1" type="radio" name="acor" id="size1" checked="checked">
+    <label for="size1">Описание</label>
+    <input class="ThemeSize2" type="radio" name="acor" id="size2">
+    <label for="size2">Параметры</label>
+    <input class="ThemeSize3" type="radio" name="acor" id="size3">
+    <label for="size3">Особенности</label>
+</div>
+<div class="information_acor_body">
+	<div class="acor-body acor-body_display_1">
+       	 	<p>Тепло в квартире, доме и любом другом помещении обеспечит кварцевый обогреватель модели ЭКСО 380 Classik. Тщательно очищенный кварцевый песок спрессован в пластину в форме традиционного плоского радиатора, укрепленную армированием. Прибор потребляет всего 0,38 КВт, продолжает отдавать накопленное тепло в течение 40-60 минут после разогрева.</p>
+       	 	<p>При изготовлении четырехколесной подставки использована высококачественная фурнитура; монтаж не требуется, пластина обогревателя просто вставляется в пазы. При необходимости мобильный прибор легко выкатывается на балкон, лоджию, в ванную, на веранду. Мы предлагаем низкие цены от производителя и оперативную доставку заказов.</p>
+    </div>
+    <div class="acor-body acor-body_display_2">
+       	 	<li class="acor_parametrs">
+       	 		<h1>Тип обогревателя:</h1>
+       	 		<h2>Кварцевый</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Назначение:</h1>
+       	 		<h2>Для дома, для дачи, для коммерческих помещений (магазина, склада), для базы отдыха, для гостиницы, для детского сада, для школы, для медицинских учреждений, для салона красоты, для больницы, для комнаты, для балкона, для ванной, для курятника и домашних животных, для офиса, для гаража, для влажных помещений (баня, СПА)</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Страна производства:</h1>
+       	 		<h2>Россия</h2>
+       	 	</li>
+       	  	<li class="acor_parametrs">
+       	 		<h1>Размеры (ВхШхГ), без кронштейна:</h1>
+       	 		<h2>650 x 350 x 25мм</h2>
+       	 	</li>
+       	   	<li class="acor_parametrs">
+       	 		<h1>Положение:</h1>
+       	 		<h2>Горизонтальное</h2>
+       	 	</li>
+       	  	<li class="acor_parametrs">
+       	 		<h1>Установка (тип монтажа):</h1>
+       	 		<h2>Напольный</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Рекомендуемая площадь помещения, кв.м (при высоте потолка 2,6 м):</h1>
+       	 		<h2>6-8м2</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Отапливаемый объем воздуха при минимальных потерях:</h1>
+       	 		<h2>16-31 м3 (6-11 м2)</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Потребляемая мощность:</h1>
+       	 		<h2>0,38 кВт</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Температура поверхности:</h1>
+       	 		<h2>95°С</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Время остывания:</h1>
+       	 		<h2>Не более 1,5 градуса в минуту</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Время нагрева:</h1>
+       	 		<h2>До 75 градусов 30 мин</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Энергопотребление:</h1>
+       	 		<h2>Энергосберегающий</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Потребление с терморегулятором в сутки:</h1>
+       	 		<h2>1,4 кВт</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Тип обогревательного элемента:</h1>
+       	 		<h2>Керамический</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Тип теплопередачи:</h1>
+       	 		<h2>Конвекция между стеной и нагревателем. КПД-99,5%</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Тип питания:</h1>
+       	 		<h2>Электрический</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Напряжение питания:</h1>
+       	 		<h2>220 Вольт (+-10%)</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Пожаробезопасность:</h1>
+       	 		<h2>Безопасен</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Защита от поражения электрическим током:</h1>
+       	 		<h2>1 класс</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Цвет:</h1>
+       	 		<h2>Светло-бежевый</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Год выпуска:</h1>
+       	 		<h2>2020</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Гарантия:</h1>
+       	 		<h2>5 лет</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Срок службы:</h1>
+       	 		<h2>25 лет</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Вес, кг:</h1>
+       	 		<h2>12 кг</h2>
+       	 	</li>
+       	 	<li class="acor_parametrs">
+       	 		<h1>Размеры изделия в упаковке:</h1>
+       	 		<h2>70 см х 40 см х 4 см</h2>
+       	 	</li>
+       	 <a href="#conteiner_accordion" class="arrow_up"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
+    <div class="acor-body acor-body_display_3">
+     	 	<h3>Плюсы и особенности обогревателя:</h1>
+       	 	<ul>
+       	 		<li>удобство использования, легкое передвижение. Модель укомплектована специальной металлической подставкой на колесах;</li>
+       	 		<li>отсутствие пожарной опасности. Прибор не требуется отключать на ночь и при кратковременном уходе из дома;</li>
+       	 		<li>долгое время службы. Срок, заявленный производителем – 25 лет, на деле продолжительность эксплуатации не ограничена;</li>
+       	 		<li>комфортный микроклимат. Обогреватель-монолит работает бесшумно, не пересушивает воздух.</li>
+       	 	</ul>
+    </div>
+</div>
+
+<!--Скрипт на смену размеров блоков аккордиона-->
+<script src="js/scriptTheme.js"></script>
+
+<!--Блок задать вопросы-->
+<div class="conteiner_questions">
+	<input id="question" type="checkbox">
+	<label for="question" class="button_question">
+		<div class="question_check">
+			<h1 class="question_text">Задайте нам вопрос</h1>
+			<i class="fas fa-question-circle"></i>
+		</div>
+	</label>
+		<div class="box_question">
+			<div class="close_question">
+				<label for="question"><i class="fas fa-times"></i></label>
+			</div>
+			<div class="info_question">
+				<form action="mail.php" method="POST">
+					<h1>Заполните эту форму и мы обязательно свяжемся с вами</h1>
+					<div class="inputBox W50">
+						<textarea required="" name="user_text"></textarea>
+						<span>Ваше сообщение</span>
+					</div>
+					<div class="inputBox W50">
+					    <input type="text" required="" name="user_name">
+						<span>Ваше имя</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_email">
+						<span>Ваш email</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_phone">
+						<span>Ваш номер телефона</span>
+					</div>
+					<button type="submit" class="inputBox btn_question">Отправить</button>
+				</form>
+			</div>	
+		</div>
+</div>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.css" rel="stylesheet">
+
+<!--Положение значка корзины-->
+<style>
+	#enscart_wrapper {
+		top: 3%;  
+		bottom: auto;
+		right: 10%;
+		left: auto;		
+	}
+</style>
+
+<!--Изменения значка корзины-->
+<script>
+    document.addEventListener("EasyNetShopLoaded", function(event) {
+	  // Устанавливаем изображение. Указываем адрес загруженной на сайт картинки 
+      ens_jQuery('#enscart_image_wrapper').html('<i class="fas fa-shopping-basket"></i>');             
+    }, false);
+</script>
+
+<style>
+    #enscart_wrapper {
+      text-align: center; /*Выровнять иконку корзины по центру */
+    }
+   
+    #enscart_image_wrapper {
+      background: none /* Изменить фон кнопки */
+     
+    }
+    #enscart_image_wrapper .fas {
+      height: none; /* Подогнать размер изображения под кнопку */
+      width: none; 
+      font-size: 30px;
+      color: #C69155;
+      transition-duration: 1000ms;
+      padding-top: none;
+    }
+</style>
+
+<!--Изменение стили кнопки-->
+<style>
+	.btn-ens-style{ background-color:#10111F; }
+	.btn-ens-style{ border-color:#10111F; }
+	.btn-ens-style{ color:#F2E185; }
+	.btn-ens-style:hover{ background-color:#10111F; }
+	.btn-ens-style:hover{ border-color:#10111F; }
+	.btn-ens-style:hover{ color:#F2E185; }
+</style>
+
+<!--Анимация перехода товара в корзину-->
+<script>
+document.addEventListener("EasyNetShopLoaded", function(event) {
+     ens_jQuery(".easynetshop-buy, .btn-ens-action").click(function () {
+       var target = ens_jQuery(this);
+       var pos = target.offset();
+       var cart_pos = ens_jQuery('#enscart_wrapper').offset();
+	   var clone = target.clone()
+			  .css({ position: 'absolute', 'z-index': '2100', top: pos.top, left: pos.left })
+			  .appendTo("body")
+			  .animate({top: cart_pos.top, left: cart_pos.left, opacity: 0}, 900, function() { clone.remove(); });
+       });
+    }, false);
+   document.addEventListener("EasyNetShopModalOpened", function(event) {
+      if ((ens_jQuery(".easynetshop-modal-addtocart").css('display') != 'none'))  hideEasynetshopModals();
+   }, false);
+</script>
+</body>
+
+<footer>
+	<div class="conteiner_newsletter">
+		<div class="newsletter">
+			<h1 class="wow">Подписывайтесь на нашу новостную рассылку</h1>
+			<input type="text" name="" placeholder="Введите почту">
+			<input type="submit" name="" value="Подписка">
+		</div>
+	</div>
+	<div class="conteiner_f_contact">
+		<div class="information">
+			<h1 class="c_h1">Свяжитесь с нами</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-map-marker-alt"></i>
+					<p>1-й Оборонный пер., 11,<br> Серпухов, Московская обл.,<br> 142200</p>
+				</li>
+				<li>
+					<i class="far fa-envelope"></i>
+					<p>eco.kvarz@mail.ru</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-209-08-10</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-926-597-96-89</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-208-68-16</p>
+				</li>
+			</div>
+		</div>
+		<div class="information">
+			<h1 class="c_h1">Информация</h1>
+			<div class="list_footer">
+				<li>
+					<input id="delivery" type="checkbox">
+					<label for="delivery">
+						<i class="fas fa-caret-right"></i>
+						<a>Доставка</a>
+					</label>
+						<div class="conteiner_delivery">	
+							<div class="close_delivery">
+								<label for="delivery"><i class="fas fa-times"></i></label>
+							</div>
+							<div class="box_delivery">
+								<div class="info_delivery">
+									<h3>Способы оплаты</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-money-bill"></i>
+											<h4>Наличный расчет</h4>
+										</div>
+										<p>В нешем торговом магазине по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-money-check-alt"></i>
+											<h4>Безналичный расчет</h4>
+										</div>
+										<p>Отправьте заявку, в которой укажите необходимое количество наименований продукции и контактную информацию.<br> Вам выставят счет, а после оплаты, возможна отгрузка товара.</p>
+								</div>
+								<div class="info_delivery">
+									<h3>Варианты доставки</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-truck-loading"></i>
+											<h4>Самовывоз</h4>
+										</div>
+										<p>Бесплатно с нашего торгового магазина по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-truck"></i>
+											<h4>Доставка по городу</h4>
+										</div>
+										<p>Осуществляется силами компаний перевозчиков</p>
+								</div>
+							</div>
+						</div>
+				</li>
+				<li>
+					<input id="certificates" type="checkbox">
+					<label for="certificates">
+						<i class="fas fa-caret-right"></i>
+						<a>Сертификаты</a>
+					</label>
+						<div class="conteiner_certificates">	
+							<div class="box_certificates">
+								<div class="close_certificates">
+									<label for="certificates"><i class="fas fa-times"></i></label>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg">
+        								<img src="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg" alt="">
+        							</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+				</li>
+			</div>
+		</div>
+		<div class="information information_foto">
+			<h1 class="c_h1">Фото</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-caret-right"></i>
+					<a href="photogallery.html">Фотогалерея</a>
+				</li>
+			</div>
+		</div>
+	</div>
+	<div class="footer_social">
+		<div class="menu_social_mobile">
+			<li>
+				<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+					<i class="fab fa-vk"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+					<i class="fab fa-telegram-plane"></i>
+				</a>
+			</li>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset="UTF-8">
+	<title>ЭКО</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+<!--Подключение библиотеки jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Иконки-->
+<script src="https://kit.fontawesome.com/098fd12808.js" crossorigin="anonymous"></script>
+
+<!-- Анимация при скролле-->
+	<link rel="stylesheet" href="animate.css">
+	<script src="js/script.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+<!-- Слайдер картинок -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/jquery.fancybox.min.css" />
+	<script src="js/jquery.fancybox.min.js"></script>
+
+</head>
+
+<header>
+	<!--Параметры меню-->
+	<div class="header_new">
+		<div class="figure">
+			<div class="logo"><img src="image/image_logo.png"></div>
+		</div>
+		<div class="border"></div>
+
+		<div class="conteiner_menu_1">
+			<div class="icon">
+				<input id="soc" type="checkbox">
+				<label for="soc"><i class="fas fa-project-diagram"></i></label>
+					<div class="social_conteiner">
+						<li>
+							<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+								<i class="fab fa-vk"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+					</div>
+			</div>
+			<div class="menu">
+				<li><a class="border_menu" href="index.html">Главная</a></li>
+				<li><a href="index_product.html">Каталог</a></li>
+			</div>
+		</div>
+
+		<div class="conteiner_menu_2">
+			<div class="menu">
+				<li><a href="services.html">Услуги</a></li>
+				<li><a href="index_contact.html">Контакты</a></li>
+			</div>
+			<div class="icon">
+				<input id="search" type="checkbox">
+				<label for="search" class="button_search"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+		</div>
+	</div>
+
+	<!--Параметры мобильного меню-->
+	<div class="mobile_menu">
+			<div class="conteiner_mobile_menu">
+				<label for="toggle_menu">
+					<div class="header_burger">
+						<span></span>
+					</div>
+				</label>
+				<input type="checkbox" id="toggle_menu">
+					<div class="menu_header">
+						<a href="index.html">Главная</a>
+						<a href="index_product.html">Каталог</a>
+		    		<a href="services.html">Услуги</a>
+						<a href="index_contact.html">Контакты</a>
+						<a href="photogallery.html">Фотогалерея</a>
+					</div>
+				<div class="mobile_img">
+					<p>ЭКО</p>
+					<img src="image/mobile_logo.png" alt="">
+					<p>КВАРЦ</p>
+				</div>
+				<input id="basket" type="checkbox">
+				<label for="basket"><i class="fas fa-shopping-basket"></i></label>
+			</div>
+	</div>
+	<script src="js/script_mobile-menu.js"></script> <!--Скрипт на мобильное меню-->
+
+	<div class="i_header">
+		<img src="image/image_1.jpg">
+	</div>
+</header>
+
+<body>
+<!--Блок обощения обогревателя-->
+<div class="conteiner_insertion">
+	<h1>Кварцевые обогреватели ЭКО</h1>
+	<div class="box_insertion">
+		<div class="info_insertion wow fadeInLeft" data-wow-offset="150" data-wow-duration="1.5s">
+			<h2>Почему кварцевые обогреватели?</h2>
+			<p>
+			Наша компания позаботится о теплоте и уюте в вашем доме с максимальной экономией средств. На сегодняшний день все большей популярностью пользуются кварцевые обогреватели. Мы предлагаем эффективное энергосберегающее отопление - кварцевые обогреватели.
+			</p>
+			<p>
+			Кварцевый обогреватель — это отопительный прибор, который работает от электроэнергии, его отдельные элементы выполнены из кварца. Работает приспособление, применяя инфракрасное излучение, которое рассеивается по помещению. То есть, процесс обогрева схож с тем, как солнце обогревает землю. Это достаточно эффективно и просто.
+			</p>
+			<p>
+			Насколько такие приборы являются эффективными и как именно они работают? Все очень просто — конструктивно это монолитные плиты с заключенной внутри спиралью и подключаемые к электросети. Для изготовления панели используется высококачественный, 100% кварцевый песок, который замешивается с экологически чистой белой глиной и мраморной крошкой.
+			</p>
+		</div>
+		<div class="conteiner_slider wow fadeInRight" data-wow-offset="150" data-wow-duration="1.5s">
+			<div class="all">
+				<input checked type="radio" name="respond" id="desktop">
+					<article id="slider">
+						<input checked type="radio" name="slider" id="switch1">
+						<input type="radio" name="slider" id="switch2">
+						<input type="radio" name="slider" id="switch3">
+						<input type="radio" name="slider" id="switch4">
+						<input type="radio" name="slider" id="switch5">
+						<div id="slides">
+						<div id="overflow">
+							<div class="image">
+								<article><img src="image/image_2.jpg"></article>
+								<article><img src="image/image_3.jpg"></article>
+								<article><img src="image/image_4.jpg"></article>
+								<article><img src="image/image_5.jpg"></article>
+								<article><img src="image/image_6.jpg"></article>
+							</div>
+						</div>
+						</div>
+						<div id="controls">
+							<label for="switch1"></label>
+							<label for="switch2"></label>
+							<label for="switch3"></label>
+							<label for="switch4"></label>
+							<label for="switch5"></label>
+						</div>
+					</article>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Блок основных характеристик обогревателя-->
+<div class="conteiner_characteristic">
+	<h1>Преимущества кварцевых обогревателей</h1>
+	<div class="circule_1 wow fadeIn" data-wow-offset="150" data-wow-duration="3s"></div>
+	<div class="circule_2"></div>
+	<div class="circule_3"></div>
+	<div class="box_characteristic">
+		<div class="char char_top_1">
+			<div class="info_char width_char_1 wow fadeInLeft" data-wow-offset="150" data-wow-duration="1s">
+				<i class="fas fa-layer-group"></i>
+				<p>Перегрев, короткое замыкание, возгорание полностью исключены.</p>
+			</div>
+			<div class="info_char width_char_1 wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">			
+				<i class="fas fa-layer-group"></i>
+				<p>Кварцевые обогреватели полностью безопасны и экологичны.</p>
+			</div>
+		</div>
+		<div class="char char_top_2">
+			<div class="info_char width_char_2 wow fadeInLeft" data-wow-offset="150" data-wow-duration="1s">
+				<i class="fas fa-layer-group"></i>
+				<p>Может служить как основным обогревательным элементом, так и вспомогательным.</p>
+			</div>
+			<div class="info_char width_char_2 wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">			
+				<i class="fas fa-layer-group"></i>
+				<p>Устройство накапливает тепло и обогревает помещение в выключенном положении .</p>
+			</div>
+		</div>
+		<div class="char char_top_3">
+			<div class="info_char width_char_3 wow fadeInLeft" data-wow-offset="150" data-wow-duration="1s">
+				<i class="fas fa-layer-group"></i>
+				<p>Не пересушивают воздух в помещении.</p>
+			</div>
+			<div class="info_char width_char_3 wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">			
+				<i class="fas fa-layer-group"></i>
+				<p>Равномерное распределение тепла.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Блок основных характеристик обогревателя мобильная версия-->
+<div class="conteiner_characteristic_mobile">
+	<h1>Преимущества кварцевых обогревателей</h1>
+	<div class="box_characteristic_mobile">
+		<div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Перегрев, короткое замыкание, возгорание полностью исключены.</p>
+			</div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Кварцевые обогреватели полностью безопасны и экологичны.</p>
+			</div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Может служить как основным обогревательным элементом, так и вспомогательным.</p>
+			</div>
+		</div>
+		<div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Устройство накапливает тепло и обогревает помещение в выключенном положении .</p>
+			</div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Не пересушивают воздух в помещении.</p>
+			</div>
+			<div class="info_char_mobile">
+				<i class="fas fa-layer-group"></i>
+				<p>Равномерное распределение тепла.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Блок сферы применения обогревателя-->
+	<div class="conteiner_using">
+		<h1 class="text_h_u">СФЕРА ПРИМЕНЕНИЯ</h1>
+		<div class="icon_u">
+			<i class="fas fa-globe"></i>
+		</div>
+		<div class="using">
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-home"></i>
+					<h2>ЖИЛЫЕ ПОМЕЩЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-building"></i>
+					<h2>ОФИСНЫЕ ПОМЕЩЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-graduation-cap"></i>
+					<h2>УЧЕБНЫЕ УЧРЕЖДЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-hotel"></i>
+					<h2>ГОСТИНИЦЫ ОТЕЛИ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-store"></i>
+					<h2>ТОРГОВЫЕ ПОМЕЩЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-warehouse"></i>
+					<h2>ЧАСТНЫЕ ГАРАЖИ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-hot-tub"></i>
+					<h2>САУНЫ БАНИ БАССЕЙНЫ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-box-open"></i>
+					<h2>СКЛАДСКИЕ ПОМЕЩЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-basketball-ball"></i>
+					<h2>СПОРТИВНЫЕ ПОМЕЩЕНИЯ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-tools"></i>
+					<h2>СТРОИТЕЛЬНЫЕ ОБЪЕКТЫ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-parking"></i>
+					<h2>АВТОМОБИЛЬНЫЕ СТОЯНКИ</h2>
+				</div>
+			</div>
+			<div class="box_u wow fadeInDown" data-wow-offset="50" data-wow-duration="2s">
+				<div class="info_using">
+					<i class="fas fa-hotel"></i>
+					<h2>ЗДАНИЯ АДМИНИСТРАЦИИ</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Блок как мы работаем-->
+<div class="conteiner_work">
+	<h1>Как мы работаем?</h1>
+	<div class="box_work">
+		<div class="work">
+			<div class="info_work wow zoomIn" data-wow-offset="100" data-wow-duration="2s">
+				<div class="padding_work">
+					<i class="fas fa-envelope-open-text"></i>
+					<p>1. Вы оставляете заявку</p>
+				</div>
+			</div>
+			<div class="info_work wow zoomIn" data-wow-offset="100" data-wow-duration="2s">
+				<div class="padding_work">
+					<i class="fas fa-phone-volume"></i>
+					<p>2. Мы связываемся с вами</p>
+				</div>
+			</div>
+			<div class="info_work wow zoomIn" data-wow-offset="100" data-wow-duration="2s">
+				<div class="padding_work">
+					<i class="fas fa-archive"></i>
+					<p>3. Подбираем подходящий вариант</p>
+				</div>
+			</div>
+			<div class="info_work wow zoomIn" data-wow-offset="100" data-wow-duration="2s">
+				<div class="padding_work">
+					<i class="fas fa-drafting-compass"></i>
+					<p>4. Делаем расчет исходя из площади</p>
+				</div>
+			</div>
+			<div class="info_work wow zoomIn" data-wow-offset="100" data-wow-duration="2s">
+				<div class="padding_work">
+					<i class="fas fa-tools"></i>
+					<p>5. Производим установку</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Блок задать вопросы-->
+<div class="conteiner_questions">
+	<input id="question" type="checkbox">
+	<label for="question" class="button_question">
+		<div class="question_check">
+			<h1 class="question_text">Задайте нам вопрос</h1>
+			<i class="fas fa-question-circle"></i>
+		</div>
+	</label>
+		<div class="box_question">
+			<div class="close_question">
+				<label for="question"><i class="fas fa-times"></i></label>
+			</div>
+			<div class="info_question">
+				<form action="mail.php" method="POST">
+					<h1>Заполните эту форму и мы обязательно свяжемся с вами</h1>
+					<div class="inputBox W50">
+						<textarea required="" name="user_text"></textarea>
+						<span>Ваше сообщение</span>
+					</div>
+					<div class="inputBox W50">
+					    <input type="text" required="" name="user_name">
+						<span>Ваше имя</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_email">
+						<span>Ваш email</span>
+					</div>
+					<div class="inputBox W50">
+						<input type="text" required="" name="user_phone">
+						<span>Ваш номер телефона</span>
+					</div>
+					<button type="submit" class="inputBox btn_question">Отправить</button>
+				</form>
+			</div>	
+		</div>
+</div>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-f2397d48.css" rel="stylesheet">
+
+<!--Положение значка корзины-->
+<style>
+	#enscart_wrapper {
+		top: 25px;  
+		bottom: auto;
+		right: 10%;
+		left: auto;		
+	}
+</style>
+
+<!--Изменения значка корзины-->
+<script>
+    document.addEventListener("EasyNetShopLoaded", function(event) {
+	  // Устанавливаем изображение. Указываем адрес загруженной на сайт картинки 
+      ens_jQuery('#enscart_image_wrapper').html('<i class="fas fa-shopping-basket"></i>');             
+    }, false);
+</script>
+
+<style>
+    #enscart_wrapper {
+      text-align: center; /*Выровнять иконку корзины по центру */
+    }
+   
+    #enscart_image_wrapper {
+      background: none /* Изменить фон кнопки */
+     
+    }
+    #enscart_image_wrapper .fas {
+      height: none; /* Подогнать размер изображения под кнопку */
+      width: none; 
+      font-size: 30px;
+      color: #C69155;
+      transition-duration: 1000ms;
+      padding-top: 10px;
+    }
+</style>
+</body>
+
+<footer>
+	<div class="conteiner_newsletter">
+		<div class="newsletter">
+			<h1 class="wow">Подписывайтесь на нашу новостную рассылку</h1>
+			<input type="text" name="" placeholder="Введите почту">
+			<input type="submit" name="" value="Подписка">
+		</div>
+	</div>
+	<div class="conteiner_f_contact">
+		<div class="information">
+			<h1 class="c_h1">Свяжитесь с нами</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-map-marker-alt"></i>
+					<p>1-й Оборонный пер., 11,<br> Серпухов, Московская обл.,<br> 142200</p>
+				</li>
+				<li>
+					<i class="far fa-envelope"></i>
+					<p>eco.kvarz@mail.ru</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-209-08-10</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-926-597-96-89</p>
+				</li>
+				<li>
+					<i class="fas fa-phone-alt"></i>
+					<p>8-925-208-68-16</p>
+				</li>
+			</div>
+		</div>
+		<div class="information">
+			<h1 class="c_h1">Информация</h1>
+			<div class="list_footer">
+				<li>
+					<input id="delivery" type="checkbox">
+					<label for="delivery">
+						<i class="fas fa-caret-right"></i>
+						<a>Доставка</a>
+					</label>
+						<div class="conteiner_delivery">	
+							<div class="close_delivery">
+								<label for="delivery"><i class="fas fa-times"></i></label>
+							</div>
+							<div class="box_delivery">
+								<div class="info_delivery">
+									<h3>Способы оплаты</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-money-bill"></i>
+											<h4>Наличный расчет</h4>
+										</div>
+										<p>В нешем торговом магазине по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-money-check-alt"></i>
+											<h4>Безналичный расчет</h4>
+										</div>
+										<p>Отправьте заявку, в которой укажите необходимое количество наименований продукции и контактную информацию.<br> Вам выставят счет, а после оплаты, возможна отгрузка товара.</p>
+								</div>
+								<div class="info_delivery">
+									<h3>Варианты доставки</h3>
+										<div class="heading_delivery">
+											<i class="fas fa-truck-loading"></i>
+											<h4>Самовывоз</h4>
+										</div>
+										<p>Бесплатно с нашего торгового магазина по адресу указанному на странице Контакты</p>
+										<div class="heading_delivery">
+											<i class="fas fa-truck"></i>
+											<h4>Доставка по городу</h4>
+										</div>
+										<p>Осуществляется силами компаний перевозчиков</p>
+								</div>
+							</div>
+						</div>
+				</li>
+				<li>
+					<input id="certificates" type="checkbox">
+					<label for="certificates">
+						<i class="fas fa-caret-right"></i>
+						<a>Сертификаты</a>
+					</label>
+						<div class="conteiner_certificates">	
+							<div class="box_certificates">
+								<div class="close_certificates">
+									<label for="certificates"><i class="fas fa-times"></i></label>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg">
+        								<img src="https://kovcheggri-kzn.ru/thumb/2/BNEknWnUnGeEtEdKZG4ToA/r/d/sertifikat_ot_070920.jpg" alt="">
+        							</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/yaBZemlHApk8NkR1WYgBJQ/r/d/380_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+								<div class="info_certificates">
+									<a data-fancybox="box" href="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg">
+										<img src="https://kovcheggri-kzn.ru/thumb/2/egyF-T_563ZE6BWmR2LsFQ/r/d/620_vt_pozharnyj_sertifikat.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+				</li>
+			</div>
+		</div>
+		<div class="information information_foto">
+			<h1 class="c_h1">Фото</h1>
+			<div class="list_footer">
+				<li>
+					<i class="fas fa-caret-right"></i>
+					<a href="photogallery.html">Фотогалерея</a>
+				</li>
+			</div>
+		</div>
+	</div>
+	<div class="footer_social">
+		<div class="menu_social_mobile">
+			<li>
+				<a href="https://twitter.com/intent/tweet?text=Магазин ЭКО&url={адрес страницы}" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={адрес страницы}" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://vk.com/share.php?url={адрес страницы}" target="_blank">
+					<i class="fab fa-vk"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://t.me/share/url?url={адрес страницы}&text=Магазин ЭКО" target="_blank">
+					<i class="fab fa-telegram-plane"></i>
+				</a>
+			</li>
+		</div>
+	</div>
+</footer>
